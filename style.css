@@ -1,0 +1,389 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+/* Header styles */
+/* #header {
+    background: linear-gradient(90deg, #7b4397, #dc2430);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+} */
+
+/* #header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+} */
+/* 
+#header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+} */
+/* Navbar styles */
+.navbar {
+    background: linear-gradient(to right, #7b4397, #dc2430);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Header content styles */
+.header-content {
+    background: linear-gradient(to right, #7b4397, #dc2430);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+     
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    
+}
+
+.search-btn {
+    background-color: #fff;
+    color: #282c34;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #f0f0f0;
+}
+/* Search bar styles */
+#search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#search-form {
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #7b4397, #dc2430);
+}
+
+#search-input {
+    border: none;
+    padding: 1rem;
+    flex: 1;
+    font-size: 1rem;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+}
+
+#search-form button {
+    background-color: #f4f4f4;
+    border: none;
+    color: #1a1a1a;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s ease;
+}
+
+#search-form button:hover {
+    background-color: #d4d4d4;
+}
+
+/* Movie card container */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.movie-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.movie-card p {
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.more-info-btn {
+    background: linear-gradient(90deg, #7b4397, #dc2430);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.more-info-btn:hover {
+    background: linear-gradient(90deg, #dc2430, #7b4397);
+}
+
+/* Footer styles */
+/* #footer {
+    background: linear-gradient(90deg, #7b4397, #dc2430);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-weight: 700;
+} */
+#footer {
+    margin-bottom: 0;
+    margin-top: 70px;
+    background-color: #282c34;
+    color: #61dafb;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.3rem;
+}
+
+.footer-section a {
+    color: #61dafb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #4fa3c0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-links li {
+    margin-right: 0.5rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: #61dafb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #4fa3c0;
+}
+
+.fas.fa-heart {
+    color: #e25555;
+}
+
+#title-header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: #61dafb; /* Match your theme */
+}
+
+
+/* adding media queries  */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    #header h1 {
+        font-size: 2rem;
+    }
+
+    #header p {
+        font-size: 1rem;
+    }
+
+    #search-section {
+        flex-direction: column;
+    }
+
+    #search-form {
+        width: 100%;
+    }
+
+    #search-input {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #search-form button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .movie-container {
+        padding: 0 1rem;
+    }
+
+    .movie-card {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 1rem; /* Space between cards */
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    #header h1 {
+        font-size: 2.5rem;
+    }
+
+    #header p {
+        font-size: 1.1rem;
+    }
+
+    #search-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .movie-container {
+        padding: 0 2rem;
+    }
+
+    .movie-card {
+        width: calc(50% - 1rem); /* Two cards per row */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 901px) {
+    #header h1 {
+        font-size: 3rem;
+    }
+
+    #header p {
+        font-size: 1.2rem;
+    }
+
+    .movie-container {
+        padding: 0 4rem;
+    }
+
+    /* .movie-card {
+        width: calc(33.333% - 1rem); 
+    } */
+    /* Three cards per row */
+
+}
